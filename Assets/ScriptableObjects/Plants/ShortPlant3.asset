@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a018f7ec0d0ebc489a9851d7b9e581a, type: 3}
+  m_Name: ShortPlant3
+  m_EditorClassIdentifier: 
+  plantTiles:
+  - {fileID: 11400000, guid: c5d7a09d18a11c54aa289eb21c1cb7d1, type: 2}
+  xSize: 1
+  ySize: 1
+  appearanceRate: 0.046

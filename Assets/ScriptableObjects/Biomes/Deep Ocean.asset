@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaeb73c3b326da4a8b66838dfd323ea, type: 3}
+  m_Name: Deep Ocean
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 11400000, guid: 5db1bed91da749b418a528c3218027e6, type: 2}
+  - {fileID: 11400000, guid: b89b0b9e8cd794a4e97d4f97d8564c27, type: 2}
+  - {fileID: 11400000, guid: 1d11917cf74014e47bf8d35ad71dd906, type: 2}
+  minHeight: 0
+  minMoisture: 0
+  minHeat: 0

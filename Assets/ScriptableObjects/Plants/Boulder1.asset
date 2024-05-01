@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a018f7ec0d0ebc489a9851d7b9e581a, type: 3}
+  m_Name: Boulder1
+  m_EditorClassIdentifier: 
+  plantTiles:
+  - {fileID: 11400000, guid: 3ec61b66625568641be969356a778184, type: 2}
+  - {fileID: 11400000, guid: 87632528de1b35345b2b02f6de0fb068, type: 2}
+  - {fileID: 11400000, guid: 15b4bdc328e1dc74ea4b1e6b139f67ae, type: 2}
+  - {fileID: 11400000, guid: c2861646c10043f4f8b5620cf3b5bab5, type: 2}
+  xSize: 2
+  ySize: 2
+  appearanceRate: 0.0026

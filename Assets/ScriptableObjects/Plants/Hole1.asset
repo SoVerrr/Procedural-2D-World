@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a018f7ec0d0ebc489a9851d7b9e581a, type: 3}
+  m_Name: Hole1
+  m_EditorClassIdentifier: 
+  plantTiles:
+  - {fileID: 11400000, guid: ebc0b55f45cc2b042bff8ab9c250e631, type: 2}
+  - {fileID: 11400000, guid: 8b2a8b6f89cbfe04bbd4c687c6d2110e, type: 2}
+  - {fileID: 11400000, guid: df9f58e76a3cd074188c6bac18b037c1, type: 2}
+  - {fileID: 11400000, guid: 177344bda8486514e88588f416edf31b, type: 2}
+  - {fileID: 11400000, guid: 89a00e615d04e9e41b1d81b7e03e23d3, type: 2}
+  - {fileID: 11400000, guid: 3cc74777ed7142c4ab25339a8cc63953, type: 2}
+  - {fileID: 11400000, guid: 3d3c7690de20ede409e65196e80b4c18, type: 2}
+  - {fileID: 11400000, guid: 2c6ff65d4e8bc6e4dbf201ba6a07297b, type: 2}
+  - {fileID: 11400000, guid: 20c882d68c1a8114c84eda82bf453f6a, type: 2}
+  xSize: 3
+  ySize: 3
+  appearanceRate: 0.0007
