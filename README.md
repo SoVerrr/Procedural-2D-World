@@ -1,11 +1,17 @@
 # Procedural-2D-World
 Procedural 2D world is a project which aims to create procedural worlds using Unity's tilemap system.
 
+ Technologies used:
+  - Unity
+  -   Job System
+  -   Burst Compiler
+  -   Tilemap System
+  -   Event System
+
  Techniques used:
   - Diamond Square algorigthm to create heightmaps
   - Combination of heightmaps, heatmaps and moisturemaps to create biomes
   - A* pathfinding and Bezier Curves to generate rivers
-  - Unity Job System and Burst Compiler for biome distribution
 
  Features:
   - Easy biome creation with BiomePreset scriptable objects
@@ -17,6 +23,9 @@ Procedural 2D world is a project which aims to create procedural worlds using Un
   - Adjusting the amount of rivers, curves within them and their curvature range
 
  ![River](https://github.com/SoVerrr/Procedural-2D-World/assets/82769474/8cdfbfb5-ceb0-4d4c-96a6-3f6d2e79b07a)
+  - Adjusting the size of the map (which is (2^n) + 1) and heightmap parameters
+
+ ![Terrain](https://github.com/SoVerrr/Procedural-2D-World/assets/82769474/ac6f723e-8c2a-42c6-9de4-ffe39b40d183)
 
  Full map preview:
 
