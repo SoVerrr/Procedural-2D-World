@@ -234,7 +234,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 200
+  orthographic size: 120
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -362,7 +362,6 @@ GameObject:
   m_Component:
   - component: {fileID: 870456389}
   - component: {fileID: 870456390}
-  - component: {fileID: 870456392}
   - component: {fileID: 870456391}
   m_Layer: 0
   m_Name: TestSpawner
@@ -431,19 +430,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   terrainGenerator: {fileID: 870456390}
   foliageMap: {fileID: 632808699}
---- !u!114 &870456392
+--- !u!1 &1740977325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1740977327}
+  - component: {fileID: 1740977326}
+  m_Layer: 0
+  m_Name: RiverSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1740977326
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870456388}
+  m_GameObject: {fileID: 1740977325}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc484778f29bc924aa05e939d0e46850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfRivers: 3
+  amountOfRivers: 2
   mountainBiome: {fileID: 11400000, guid: cf14e31d23b3b3b4696bc1d00b4cb098, type: 2}
   oceanBiome: {fileID: 11400000, guid: 504f3e20ad1cf9d438acd329096b5cbe, type: 2}
   riverTile: {fileID: 11400000, guid: ab23f55b5317c2b4689baf31182d3d27, type: 2}
@@ -452,7 +468,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 87b24de2bdb60f84caee4530a18c9468, type: 2}
   - {fileID: 11400000, guid: 0beae6d5d77718a4e9924f53bf882ea8, type: 2}
   - {fileID: 11400000, guid: 517acdb1d108b404a9bde4b17233801a, type: 2}
-  riverCurvatureRange: 50
+  riverCurvatureRange: 25
+--- !u!4 &1740977327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740977325}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 123.93435, y: 155.39156, z: -0.21915238}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2124458210416454990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -526,3 +557,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 2124458210416454990}
   - {fileID: 870456389}
+  - {fileID: 1740977327}
