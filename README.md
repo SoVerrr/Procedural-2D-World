@@ -1,5 +1,6 @@
 # Procedural-2D-World
-Procedural 2D world is a project which aims to create procedural world using Unity's tilemap system.
+Procedural 2D world is a project which aims to create procedural worlds using Unity's tilemap system.
+
  Techniques used:
   - Diamond Square algorigthm to create heightmaps
   - Combination of heightmaps, heatmaps and moisturemaps to create biomes
