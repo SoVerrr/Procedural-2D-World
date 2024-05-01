@@ -1,0 +1,34 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "9d2084c9-dcab-42ed-8f1f-bfd96e89cd46",
+            "actions": [
+                {
+                    "name": "Generate",
+                    "type": "Button",
+                    "id": "eb3d4f77-ca1b-4980-a508-4c90f2ac7de2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "26300a15-be31-4b5e-8854-ad97ed0c71ed",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Generate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

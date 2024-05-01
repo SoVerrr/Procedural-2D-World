@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1087873305728587680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1284698830941451936}
+  - component: {fileID: 9076776340506218484}
+  m_Layer: 0
+  m_Name: TerrainSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1284698830941451936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087873305728587680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9076776340506218484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087873305728587680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65626cbe607ee2e40bec33a6b9d850d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  terrainTiles: {fileID: 0}
+  biomes:
+  - {fileID: 11400000, guid: 504f3e20ad1cf9d438acd329096b5cbe, type: 2}
+  - {fileID: 11400000, guid: cdc7a9c2ec522a24d8aab46d8e0a1335, type: 2}
+  - {fileID: 11400000, guid: 7272fe238669fc7489dceb1d6b08658a, type: 2}
+  - {fileID: 11400000, guid: 38e0e27b5abe4234ab01d4c55d641709, type: 2}
+  - {fileID: 11400000, guid: cf14e31d23b3b3b4696bc1d00b4cb098, type: 2}
+  - {fileID: 11400000, guid: ef512b182f9e3514d876210aa331a2ac, type: 2}
+  - {fileID: 11400000, guid: cbe87c99a3677f8418653fcca349a4e0, type: 2}
+  n: 8
+  heightMapParameters:
+    randomRange: 10
+    rougness: 0.5
+  heatMapParameters:
+    randomRange: 10
+    rougness: 0.8
+  moistureMapParameters:
+    randomRange: 10
+    rougness: 0.8

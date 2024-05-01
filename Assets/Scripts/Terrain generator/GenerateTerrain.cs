@@ -8,6 +8,7 @@ using Unity.Burst;
 using Unity.Jobs;
 using Unity.Collections;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 namespace Procedural
 {
@@ -20,21 +21,28 @@ namespace Procedural
         [SerializeField] MapParameters heightMapParameters;
         [SerializeField] MapParameters heatMapParameters;
         [SerializeField] MapParameters moistureMapParameters;
-
-        public static UnityEvent<float[,], float[,], float[,], Tilemap> OnWorldGenerated = new UnityEvent<float[,], float[,], float[,], Tilemap>(); //Params: heightmap, heatmap, moisturemap
+        public static UnityEvent<Tilemap> OnWorldGenerated = new UnityEvent<Tilemap>(); //Params: heightmap, heatmap, moisturemap
+        private PlayerInputActions playerInput;
 
         void Start()
+        {
+            playerInput = new PlayerInputActions();
+            playerInput.Player.Enable();
+            playerInput.Player.Generate.performed += GenerateWorldInput;
+        }
+
+        public void GenerateWorldInput(InputAction.CallbackContext context)
         {
             CreateWorld();
         }
 
-        void Update()
+/*        void Update()
         {
             if (Input.GetMouseButtonDown(0))
             {
                 CreateWorld();
             }    
-        }
+        }*/
 
         private void CreateWorld()
         {
@@ -90,8 +98,7 @@ namespace Procedural
             }
 
             biomeIndexes.Dispose();
-
-            OnWorldGenerated.Invoke(heightmap, heatmap, moisturemap, terrainTiles);
+            OnWorldGenerated.Invoke(terrainTiles);
         }
 
         private void PopulateBiomesArray(ref NativeArray<float> minHeights, ref NativeArray<float> minHeats, ref NativeArray<float> minMoists)

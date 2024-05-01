@@ -22,13 +22,17 @@ namespace Procedural
         public static UnityEvent OnRiversGenerated = new UnityEvent();
         public static bool WereRiversGenerated = false;
 
+        private void Awake()
+        {
+            
+        }
         void Start()
         {
             GenerateTerrain.OnWorldGenerated.AddListener(InstantiateRiverGeneration);
         }
 
 
-        private void InstantiateRiverGeneration(float[,] heightmap, float[,] heatmap, float[,] moistmap, Tilemap terrain) //Assign heightmaps and terrain tilemap to variables within the script
+        private void InstantiateRiverGeneration(Tilemap terrain) //Assign heightmaps and terrain tilemap to variables within the script
         {
             terrainTiles = terrain;
             GenerateRivers();

@@ -19,7 +19,6 @@ namespace Procedural {
             terrainMap = terrainGenerator.terrainTiles;
             if (RiverGenerator.WereRiversGenerated) //Check if rivers were already generated to avoid not generating foliage on first generation
                 GenerateFoliage();
-
             RiverGenerator.OnRiversGenerated.AddListener(GenerateFoliage);
         }
 
