@@ -7,6 +7,7 @@ Procedural 2D world is a project which aims to create procedural worlds using Un
   -   Burst Compiler
   -   Tilemap System
   -   Event System
+  -   Input System
 
  Techniques used:
   - Diamond Square algorigthm to create heightmaps
